@@ -10,6 +10,8 @@
 		ECC4DE3D2D97587200AE9F76 /* NutrakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE3C2D97587200AE9F76 /* NutrakApp.swift */; };
 		ECC4DE412D97587400AE9F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC4DE402D97587400AE9F76 /* Assets.xcassets */; };
 		ECC4DE442D97587400AE9F76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC4DE432D97587400AE9F76 /* Preview Assets.xcassets */; };
+		ECC4DE532D9759D400AE9F76 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE522D9759D400AE9F76 /* TabBarView.swift */; };
+		ECC4DE552D975A1900AE9F76 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE542D975A1900AE9F76 /* CameraScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		ECC4DE3C2D97587200AE9F76 /* NutrakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrakApp.swift; sourceTree = "<group>"; };
 		ECC4DE402D97587400AE9F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC4DE432D97587400AE9F76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECC4DE522D9759D400AE9F76 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		ECC4DE542D975A1900AE9F76 /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 		ECC4DE3B2D97587200AE9F76 /* Nutrak */ = {
 			isa = PBXGroup;
 			children = (
+				ECC4DE512D9759BE00AE9F76 /* ReusableComponents */,
 				ECC4DE4D2D9758C400AE9F76 /* ScannerScreen */,
 				ECC4DE4A2D97589300AE9F76 /* App */,
 				ECC4DE422D97587400AE9F76 /* Preview Content */,
@@ -102,6 +107,7 @@
 		ECC4DE4E2D9758D500AE9F76 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECC4DE542D975A1900AE9F76 /* CameraScannerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +124,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ECC4DE512D9759BE00AE9F76 /* ReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				ECC4DE522D9759D400AE9F76 /* TabBarView.swift */,
+			);
+			path = ReusableComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC4DE552D975A1900AE9F76 /* CameraScannerView.swift in Sources */,
+				ECC4DE532D9759D400AE9F76 /* TabBarView.swift in Sources */,
 				ECC4DE3D2D97587200AE9F76 /* NutrakApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
