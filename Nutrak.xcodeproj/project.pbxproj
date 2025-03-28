@@ -12,6 +12,11 @@
 		ECC4DE442D97587400AE9F76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC4DE432D97587400AE9F76 /* Preview Assets.xcassets */; };
 		ECC4DE532D9759D400AE9F76 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE522D9759D400AE9F76 /* TabBarView.swift */; };
 		ECC4DE552D975A1900AE9F76 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE542D975A1900AE9F76 /* CameraScannerView.swift */; };
+		ECC4DE572D975A7E00AE9F76 /* CameraScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE562D975A7E00AE9F76 /* CameraScannerViewModel.swift */; };
+		ECC4DE592D975ABD00AE9F76 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE582D975ABD00AE9F76 /* CameraViewController.swift */; };
+		ECC4DE5B2D975AE000AE9F76 /* CameraConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE5A2D975AE000AE9F76 /* CameraConfiguration.swift */; };
+		ECC4DE5D2D975B3100AE9F76 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE5C2D975B3100AE9F76 /* CameraView.swift */; };
+		ECC4DE5F2D975B9F00AE9F76 /* CaptureRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE5E2D975B9F00AE9F76 /* CaptureRect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		ECC4DE432D97587400AE9F76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECC4DE522D9759D400AE9F76 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		ECC4DE542D975A1900AE9F76 /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
+		ECC4DE562D975A7E00AE9F76 /* CameraScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerViewModel.swift; sourceTree = "<group>"; };
+		ECC4DE582D975ABD00AE9F76 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		ECC4DE5A2D975AE000AE9F76 /* CameraConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConfiguration.swift; sourceTree = "<group>"; };
+		ECC4DE5C2D975B3100AE9F76 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		ECC4DE5E2D975B9F00AE9F76 /* CaptureRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureRect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				ECC4DE542D975A1900AE9F76 /* CameraScannerView.swift */,
+				ECC4DE582D975ABD00AE9F76 /* CameraViewController.swift */,
+				ECC4DE5C2D975B3100AE9F76 /* CameraView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,6 +127,7 @@
 		ECC4DE4F2D9758DB00AE9F76 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ECC4DE562D975A7E00AE9F76 /* CameraScannerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -122,6 +135,8 @@
 		ECC4DE502D9758E700AE9F76 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ECC4DE5A2D975AE000AE9F76 /* CameraConfiguration.swift */,
+				ECC4DE5E2D975B9F00AE9F76 /* CaptureRect.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,7 +220,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC4DE552D975A1900AE9F76 /* CameraScannerView.swift in Sources */,
+				ECC4DE5D2D975B3100AE9F76 /* CameraView.swift in Sources */,
+				ECC4DE5B2D975AE000AE9F76 /* CameraConfiguration.swift in Sources */,
+				ECC4DE592D975ABD00AE9F76 /* CameraViewController.swift in Sources */,
 				ECC4DE532D9759D400AE9F76 /* TabBarView.swift in Sources */,
+				ECC4DE572D975A7E00AE9F76 /* CameraScannerViewModel.swift in Sources */,
+				ECC4DE5F2D975B9F00AE9F76 /* CaptureRect.swift in Sources */,
 				ECC4DE3D2D97587200AE9F76 /* NutrakApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
