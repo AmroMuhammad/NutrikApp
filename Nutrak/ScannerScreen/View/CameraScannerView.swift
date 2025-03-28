@@ -74,19 +74,19 @@ struct CameraScannerView: View {
     private var instructionView: some View {
         HStack {
             Image(systemName: "camera.viewfinder")
-                .foregroundColor(.white)
+                .foregroundColor(Color(.nutrikWhite))
             VStack(alignment: .leading, spacing: 5) {
                 Text("Scan Your Food")
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(.nutrikWhite))
                     .font(.system(size: 12, weight: .bold))
                 Text("Ensure your food is well-lit and in focus for the most accurate scan.")
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(.nutrikWhite))
                     .font(.system(size: 10))
             }
             Spacer()
         }
         .padding()
-        .background(Color.black.opacity(0.7))
+        .background(Color(.nutrikBlack).opacity(0.7))
         .cornerRadius(10)
         .padding(.horizontal)
         .padding(.top, 50)
