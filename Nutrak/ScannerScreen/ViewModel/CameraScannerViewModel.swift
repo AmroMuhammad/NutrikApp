@@ -10,19 +10,19 @@ import Combine
 import PhotosUI
 
 class CameraScannerViewModel: ObservableObject {
-    // MARK: - Published Properties
+    
     @Published var capturedImage: UIImage?
     @Published var photoPickerItem: PhotosPickerItem?
     @Published var captureRect: CGRect = .zero
+    @Published var showProgressView = false
     
-    // MARK: - Private Properties
     private var cancellables = Set<AnyCancellable>()
     private weak var cameraController: CameraViewController?
     
     var isSimulator: Bool {
         return TARGET_OS_SIMULATOR != 0
     }
-
+    
     // MARK: - Initialization
     init() {
         setupBindings()
@@ -47,8 +47,13 @@ class CameraScannerViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] image in
                 self?.capturedImage = image
+                self?.showProgressView = image != nil
             }
             .store(in: &cancellables)
+        
+        $capturedImage
+            .map { $0 != nil }
+            .assign(to: &$showProgressView)
     }
     
     // MARK: - Public Methods
@@ -69,6 +74,17 @@ class CameraScannerViewModel: ObservableObject {
             capturedImage = UIImage(named: "pepperoni_pizza")
         } else {
             cameraController?.capturePhoto()
+        }
+    }
+    
+    func dismissPreview() {
+        capturedImage = nil
+        showProgressView = false
+    }
+    
+    func onScanCompleted() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.showProgressView = false
         }
     }
 }

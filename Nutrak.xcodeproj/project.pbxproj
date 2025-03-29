@@ -17,6 +17,8 @@
 		ECC4DE5B2D975AE000AE9F76 /* CameraConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE5A2D975AE000AE9F76 /* CameraConfiguration.swift */; };
 		ECC4DE5D2D975B3100AE9F76 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE5C2D975B3100AE9F76 /* CameraView.swift */; };
 		ECC4DE5F2D975B9F00AE9F76 /* CaptureRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE5E2D975B9F00AE9F76 /* CaptureRect.swift */; };
+		ECC4DE612D976ACF00AE9F76 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE602D976ACF00AE9F76 /* ProgressIndicatorView.swift */; };
+		ECC4DE632D976AF000AE9F76 /* ProgressIndicatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE622D976AF000AE9F76 /* ProgressIndicatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		ECC4DE5A2D975AE000AE9F76 /* CameraConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConfiguration.swift; sourceTree = "<group>"; };
 		ECC4DE5C2D975B3100AE9F76 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		ECC4DE5E2D975B9F00AE9F76 /* CaptureRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureRect.swift; sourceTree = "<group>"; };
+		ECC4DE602D976ACF00AE9F76 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
+		ECC4DE622D976AF000AE9F76 /* ProgressIndicatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 				ECC4DE542D975A1900AE9F76 /* CameraScannerView.swift */,
 				ECC4DE582D975ABD00AE9F76 /* CameraViewController.swift */,
 				ECC4DE5C2D975B3100AE9F76 /* CameraView.swift */,
+				ECC4DE602D976ACF00AE9F76 /* ProgressIndicatorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				ECC4DE562D975A7E00AE9F76 /* CameraScannerViewModel.swift */,
+				ECC4DE622D976AF000AE9F76 /* ProgressIndicatorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -219,9 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC4DE612D976ACF00AE9F76 /* ProgressIndicatorView.swift in Sources */,
 				ECC4DE552D975A1900AE9F76 /* CameraScannerView.swift in Sources */,
 				ECC4DE5D2D975B3100AE9F76 /* CameraView.swift in Sources */,
 				ECC4DE5B2D975AE000AE9F76 /* CameraConfiguration.swift in Sources */,
+				ECC4DE632D976AF000AE9F76 /* ProgressIndicatorViewModel.swift in Sources */,
 				ECC4DE592D975ABD00AE9F76 /* CameraViewController.swift in Sources */,
 				ECC4DE532D9759D400AE9F76 /* TabBarView.swift in Sources */,
 				ECC4DE572D975A7E00AE9F76 /* CameraScannerViewModel.swift in Sources */,

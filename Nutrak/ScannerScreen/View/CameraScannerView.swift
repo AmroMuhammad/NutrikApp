@@ -24,6 +24,19 @@ struct CameraScannerView: View {
                     
                     overlayViews
                     
+                    if viewModel.showProgressView {
+                        ProgressIndicatorView(
+                            onCompletion: {
+                                viewModel.onScanCompleted()
+                            },
+                            onCancel: {
+                                viewModel.dismissPreview()
+                            }
+                        )
+                        .transition(.opacity)
+                        .zIndex(1)
+                    }
+                    
                     controlsView
                 }
                 .onChange(of: geometry.size, initial: true) { oldValue, newValue in
@@ -105,14 +118,16 @@ struct CameraScannerView: View {
             
             Spacer()
             
-            Button(action: viewModel.capturePhoto) {
-                Circle()
-                    .fill(Color.white)
-                    .frame(width: 60, height: 60)
-                    .overlay(
-                        Circle()
-                            .stroke(Color.green, lineWidth: 3)
-                    )
+            if !viewModel.showProgressView {
+                Button(action: viewModel.capturePhoto) {
+                    Circle()
+                        .fill(Color.white)
+                        .frame(width: 60, height: 60)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.green, lineWidth: 3)
+                        )
+                }
             }
             
             Spacer()
