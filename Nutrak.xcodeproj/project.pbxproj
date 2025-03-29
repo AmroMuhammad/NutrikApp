@@ -23,6 +23,9 @@
 		ECC4DE672D97718000AE9F76 /* NutritionResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE662D97718000AE9F76 /* NutritionResultsViewModel.swift */; };
 		ECC4DE692D97719900AE9F76 /* NutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE682D97719900AE9F76 /* NutritionData.swift */; };
 		ECC4DE6B2D9775B500AE9F76 /* NutrientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE6A2D9775B400AE9F76 /* NutrientCard.swift */; };
+		ECC4DE712D978C1700AE9F76 /* StreakTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE702D978C1700AE9F76 /* StreakTrackerViewModel.swift */; };
+		ECC4DE762D978C4F00AE9F76 /* StreakTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE752D978C4F00AE9F76 /* StreakTrackerView.swift */; };
+		ECC4DE782D978C8700AE9F76 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE772D978C8700AE9F76 /* Milestone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		ECC4DE662D97718000AE9F76 /* NutritionResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionResultsViewModel.swift; sourceTree = "<group>"; };
 		ECC4DE682D97719900AE9F76 /* NutritionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionData.swift; sourceTree = "<group>"; };
 		ECC4DE6A2D9775B400AE9F76 /* NutrientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientCard.swift; sourceTree = "<group>"; };
+		ECC4DE702D978C1700AE9F76 /* StreakTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakTrackerViewModel.swift; sourceTree = "<group>"; };
+		ECC4DE752D978C4F00AE9F76 /* StreakTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakTrackerView.swift; sourceTree = "<group>"; };
+		ECC4DE772D978C8700AE9F76 /* Milestone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		ECC4DE3B2D97587200AE9F76 /* Nutrak */ = {
 			isa = PBXGroup;
 			children = (
+				ECC4DE6C2D978BEF00AE9F76 /* StreakTrackerScreen */,
 				ECC4DE512D9759BE00AE9F76 /* ReusableComponents */,
 				ECC4DE4D2D9758C400AE9F76 /* ScannerScreen */,
 				ECC4DE4A2D97589300AE9F76 /* App */,
@@ -167,6 +174,40 @@
 			path = ReusableComponents;
 			sourceTree = "<group>";
 		};
+		ECC4DE6C2D978BEF00AE9F76 /* StreakTrackerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ECC4DE6F2D978C0A00AE9F76 /* Models */,
+				ECC4DE6E2D978C0400AE9F76 /* ViewModels */,
+				ECC4DE6D2D978BFA00AE9F76 /* Views */,
+			);
+			path = StreakTrackerScreen;
+			sourceTree = "<group>";
+		};
+		ECC4DE6D2D978BFA00AE9F76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECC4DE752D978C4F00AE9F76 /* StreakTrackerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ECC4DE6E2D978C0400AE9F76 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ECC4DE702D978C1700AE9F76 /* StreakTrackerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ECC4DE6F2D978C0A00AE9F76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECC4DE772D978C8700AE9F76 /* Milestone.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,10 +281,13 @@
 				ECC4DE6B2D9775B500AE9F76 /* NutrientCard.swift in Sources */,
 				ECC4DE612D976ACF00AE9F76 /* ProgressIndicatorView.swift in Sources */,
 				ECC4DE552D975A1900AE9F76 /* CameraScannerView.swift in Sources */,
+				ECC4DE762D978C4F00AE9F76 /* StreakTrackerView.swift in Sources */,
 				ECC4DE5D2D975B3100AE9F76 /* CameraView.swift in Sources */,
 				ECC4DE5B2D975AE000AE9F76 /* CameraConfiguration.swift in Sources */,
+				ECC4DE782D978C8700AE9F76 /* Milestone.swift in Sources */,
 				ECC4DE632D976AF000AE9F76 /* ProgressIndicatorViewModel.swift in Sources */,
 				ECC4DE592D975ABD00AE9F76 /* CameraViewController.swift in Sources */,
+				ECC4DE712D978C1700AE9F76 /* StreakTrackerViewModel.swift in Sources */,
 				ECC4DE532D9759D400AE9F76 /* TabBarView.swift in Sources */,
 				ECC4DE692D97719900AE9F76 /* NutritionData.swift in Sources */,
 				ECC4DE572D975A7E00AE9F76 /* CameraScannerViewModel.swift in Sources */,

@@ -18,6 +18,14 @@ struct TabBarView: View {
             }
             .edgesIgnoringSafeArea(.top)
             
+            NavigationView {
+                StreakTrackerView()
+                    .navigationTitle("Streaks")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            .tabItem {
+                Label("Streaks", systemImage: "flame.fill")
+            }
         }
         .accentColor(.green)
     }
