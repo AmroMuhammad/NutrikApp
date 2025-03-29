@@ -43,7 +43,13 @@ struct CameraScannerView: View {
                     viewModel.setupCaptureRect(geometry: geometry)
                 }
             }
+            .navigationDestination(isPresented: $viewModel.showingScanResults) {
+                if let image = viewModel.capturedImage {
+                    NutritionResultsView(viewModel: NutritionResultsViewModel(image: image))
+                }
+            }
         }
+        .tint(.black)
     }
     
     // MARK: - Subviews

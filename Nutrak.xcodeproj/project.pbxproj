@@ -19,6 +19,10 @@
 		ECC4DE5F2D975B9F00AE9F76 /* CaptureRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE5E2D975B9F00AE9F76 /* CaptureRect.swift */; };
 		ECC4DE612D976ACF00AE9F76 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE602D976ACF00AE9F76 /* ProgressIndicatorView.swift */; };
 		ECC4DE632D976AF000AE9F76 /* ProgressIndicatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE622D976AF000AE9F76 /* ProgressIndicatorViewModel.swift */; };
+		ECC4DE652D97714200AE9F76 /* NutritionResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE642D97714200AE9F76 /* NutritionResultsView.swift */; };
+		ECC4DE672D97718000AE9F76 /* NutritionResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE662D97718000AE9F76 /* NutritionResultsViewModel.swift */; };
+		ECC4DE692D97719900AE9F76 /* NutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE682D97719900AE9F76 /* NutritionData.swift */; };
+		ECC4DE6B2D9775B500AE9F76 /* NutrientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE6A2D9775B400AE9F76 /* NutrientCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		ECC4DE5E2D975B9F00AE9F76 /* CaptureRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureRect.swift; sourceTree = "<group>"; };
 		ECC4DE602D976ACF00AE9F76 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
 		ECC4DE622D976AF000AE9F76 /* ProgressIndicatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorViewModel.swift; sourceTree = "<group>"; };
+		ECC4DE642D97714200AE9F76 /* NutritionResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionResultsView.swift; sourceTree = "<group>"; };
+		ECC4DE662D97718000AE9F76 /* NutritionResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionResultsViewModel.swift; sourceTree = "<group>"; };
+		ECC4DE682D97719900AE9F76 /* NutritionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionData.swift; sourceTree = "<group>"; };
+		ECC4DE6A2D9775B400AE9F76 /* NutrientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,8 @@
 				ECC4DE582D975ABD00AE9F76 /* CameraViewController.swift */,
 				ECC4DE5C2D975B3100AE9F76 /* CameraView.swift */,
 				ECC4DE602D976ACF00AE9F76 /* ProgressIndicatorView.swift */,
+				ECC4DE642D97714200AE9F76 /* NutritionResultsView.swift */,
+				ECC4DE6A2D9775B400AE9F76 /* NutrientCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,6 +144,7 @@
 			children = (
 				ECC4DE562D975A7E00AE9F76 /* CameraScannerViewModel.swift */,
 				ECC4DE622D976AF000AE9F76 /* ProgressIndicatorViewModel.swift */,
+				ECC4DE662D97718000AE9F76 /* NutritionResultsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -143,6 +154,7 @@
 			children = (
 				ECC4DE5A2D975AE000AE9F76 /* CameraConfiguration.swift */,
 				ECC4DE5E2D975B9F00AE9F76 /* CaptureRect.swift */,
+				ECC4DE682D97719900AE9F76 /* NutritionData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC4DE6B2D9775B500AE9F76 /* NutrientCard.swift in Sources */,
 				ECC4DE612D976ACF00AE9F76 /* ProgressIndicatorView.swift in Sources */,
 				ECC4DE552D975A1900AE9F76 /* CameraScannerView.swift in Sources */,
 				ECC4DE5D2D975B3100AE9F76 /* CameraView.swift in Sources */,
@@ -232,7 +245,10 @@
 				ECC4DE632D976AF000AE9F76 /* ProgressIndicatorViewModel.swift in Sources */,
 				ECC4DE592D975ABD00AE9F76 /* CameraViewController.swift in Sources */,
 				ECC4DE532D9759D400AE9F76 /* TabBarView.swift in Sources */,
+				ECC4DE692D97719900AE9F76 /* NutritionData.swift in Sources */,
 				ECC4DE572D975A7E00AE9F76 /* CameraScannerViewModel.swift in Sources */,
+				ECC4DE672D97718000AE9F76 /* NutritionResultsViewModel.swift in Sources */,
+				ECC4DE652D97714200AE9F76 /* NutritionResultsView.swift in Sources */,
 				ECC4DE5F2D975B9F00AE9F76 /* CaptureRect.swift in Sources */,
 				ECC4DE3D2D97587200AE9F76 /* NutrakApp.swift in Sources */,
 			);
