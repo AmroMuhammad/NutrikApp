@@ -34,7 +34,7 @@ struct NutritionResultsView: View {
                 ToolbarItem(placement: .principal) {
                     Text("Nutrition Results")
                         .font(.headline)
-                        .foregroundColor(.black)
+                        .foregroundColor(Color(.nutrikBlack))
                 }
             }
     }

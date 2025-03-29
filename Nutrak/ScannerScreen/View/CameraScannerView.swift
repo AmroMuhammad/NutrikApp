@@ -21,6 +21,12 @@ struct CameraScannerView: View {
                         captureRect: viewModel.captureRect,
                         onControllerCreated: viewModel.onCameraControllerCreated
                     )
+                    .onAppear {
+                        viewModel.resumeCamera()
+                    }
+                    .onDisappear {
+                        viewModel.pauseCamera()
+                    }
                     
                     overlayViews
                     
@@ -49,7 +55,7 @@ struct CameraScannerView: View {
                 }
             }
         }
-        .tint(.black)
+        .tint(Color(.nutrikBlack))
     }
     
     // MARK: - Subviews

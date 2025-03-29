@@ -90,4 +90,12 @@ class CameraScannerViewModel: ObservableObject {
             self.showProgressView = false
         }
     }
+    
+    func pauseCamera() {
+        cameraController?.pauseSession()
+    }
+    
+    func resumeCamera() {
+        cameraController?.resumeSession()
+    }
 }

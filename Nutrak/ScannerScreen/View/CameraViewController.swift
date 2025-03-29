@@ -197,4 +197,20 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
             return rect
         }
     }
+    
+    func pauseSession() {
+        DispatchQueue.global(qos: .background).async {
+            if !(self.captureSession?.isRunning ?? true) {
+                self.captureSession?.stopRunning()
+            }
+        }
+    }
+
+    func resumeSession() {
+        DispatchQueue.global(qos: .background).async {
+            if !(self.captureSession?.isRunning ?? true) {
+                self.captureSession?.startRunning()
+            }
+        }
+    }
 }
