@@ -11,7 +11,9 @@ class StreakTrackerViewModel: ObservableObject {
     @Published var currentStreak: Int
     @Published var streakDays: [Date]
     @Published var milestones: [Milestone]
-    
+    @Published var isStreakUpdated = false
+    @Published var confettiCounter: Int = 50
+
     let currentDate: Date
     
     init(currentDate: Date = Date()) {
@@ -47,6 +49,6 @@ class StreakTrackerViewModel: ObservableObject {
     }
     
     func getAchievedMilestones() -> [Milestone] {
-        milestones.filter { $0.achieved }
+        return milestones.filter { $0.achieved }
     }
 }

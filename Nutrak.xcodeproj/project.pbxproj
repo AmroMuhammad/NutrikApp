@@ -26,6 +26,7 @@
 		ECC4DE712D978C1700AE9F76 /* StreakTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE702D978C1700AE9F76 /* StreakTrackerViewModel.swift */; };
 		ECC4DE762D978C4F00AE9F76 /* StreakTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE752D978C4F00AE9F76 /* StreakTrackerView.swift */; };
 		ECC4DE782D978C8700AE9F76 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4DE772D978C8700AE9F76 /* Milestone.swift */; };
+		ECC4DE7B2D97946400AE9F76 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ECC4DE7A2D97946400AE9F76 /* ConfettiSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC4DE7B2D97946400AE9F76 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +226,9 @@
 			dependencies = (
 			);
 			name = Nutrak;
+			packageProductDependencies = (
+				ECC4DE7A2D97946400AE9F76 /* ConfettiSwiftUI */,
+			);
 			productName = Nutrak;
 			productReference = ECC4DE392D97587200AE9F76 /* Nutrak.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +257,9 @@
 				Base,
 			);
 			mainGroup = ECC4DE302D97587200AE9F76;
+			packageReferences = (
+				ECC4DE792D97946400AE9F76 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = ECC4DE3A2D97587200AE9F76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -498,6 +506,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECC4DE792D97946400AE9F76 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECC4DE7A2D97946400AE9F76 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECC4DE792D97946400AE9F76 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECC4DE312D97587200AE9F76 /* Project object */;
 }

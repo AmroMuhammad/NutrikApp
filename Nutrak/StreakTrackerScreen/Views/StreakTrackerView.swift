@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 struct StreakTrackerView: View {
     @StateObject private var viewModel = StreakTrackerViewModel()
@@ -39,6 +40,22 @@ struct StreakTrackerView: View {
                 .padding()
             }
         }
+        .onAppear(perform: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                viewModel.isStreakUpdated = true
+            }
+        })
+        .confettiCannon(
+            trigger: $viewModel.confettiCounter,
+            num: 50,                     // Number of confetti pieces
+            confettiSize: 10,            // Size of each piece
+            rainHeight: 1000,            // How far confetti falls
+            fadesOut: true,              // Fade out animation
+            opacity: 1.0,
+            openingAngle: .degrees(60),
+            closingAngle: .degrees(120),
+            radius: 200
+        )
     }
         
     private var streakHeaderSection: some View {
@@ -47,36 +64,58 @@ struct StreakTrackerView: View {
                 Circle()
                     .fill(Color.orange.opacity(0.2))
                     .frame(width: 100, height: 100)
+                    .scaleEffect(viewModel.isStreakUpdated ? 1.1 : 1.0)
+                    .animation(.spring(response: 0.3, dampingFraction: 0.5), value: viewModel.isStreakUpdated)
                 
+                // Flame animation
                 Image(systemName: "flame.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 40, height: 40)
                     .foregroundColor(.orange)
+                    .scaleEffect(viewModel.isStreakUpdated ? 1.5 : 1.0)
+                    .animation(
+                        .interpolatingSpring(stiffness: 100, damping: 10)
+                        .delay(0.1),
+                        value: viewModel.isStreakUpdated
+                    )
                     .overlay(
                         Text("\(viewModel.currentStreak)")
                             .font(.title2)
                             .fontWeight(.bold)
                             .foregroundColor(Color(.nutrikBlack))
                             .offset(y: 2)
+                            .scaleEffect(viewModel.isStreakUpdated ? 1.2 : 1.0)
+                            .animation(
+                                .interpolatingSpring(stiffness: 100, damping: 10)
+                                .delay(0.2),
+                                value: viewModel.isStreakUpdated
+                            )
                     )
             }
             .padding(.top, 10)
+            .onChange(of: viewModel.currentStreak) { _ in
+                viewModel.isStreakUpdated = true
+            }
             
             VStack(spacing: 4) {
                 Text("Current Streak")
                     .font(.title2)
                     .fontWeight(.semibold)
+                    .transition(.opacity)
                 
                 Text("\(viewModel.currentStreak) days!")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.orange)
+                    .transition(.scale.combined(with: .opacity))
                 
                 Text("Keep the momentum going!")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .transition(.opacity)
             }
+            .animation(.easeInOut(duration: 0.3), value: viewModel.currentStreak)
         }
     }
     
@@ -298,6 +337,7 @@ struct StreakTrackerView: View {
     
     private var actionButton: some View {
         Button(action: {
+            viewModel.confettiCounter += 1
             viewModel.markDayComplete()
         }) {
             HStack {
